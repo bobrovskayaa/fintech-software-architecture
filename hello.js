@@ -1,3 +1,3 @@
-const name = 'Natasha';
+const name = 'moon';
 console.log(`Hello, ${name}!`);
-console.log('It\'s a great day!');
+console.log('It\'s a great night!');
