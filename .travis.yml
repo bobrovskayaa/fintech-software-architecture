@@ -1,4 +1,4 @@
-before_script: cd hangman-js
+before_install: cd hangman-js
 sudo: false
 language: node_js
 node_js:
