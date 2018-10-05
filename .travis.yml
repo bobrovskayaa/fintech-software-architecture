@@ -1,6 +1,9 @@
-before_install: cd hangman-js
+before_install: cd hangman
 sudo: false
 language: node_js
+cache:
+  directories:
+    - node_modules
 node_js:
 - "stable"
 after_success:

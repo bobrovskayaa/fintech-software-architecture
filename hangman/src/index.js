@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 
 const { hangman } = require('./hangman.js');
+const process = require('process');
 
 const stdin = process.openStdin();
 const game = hangman();

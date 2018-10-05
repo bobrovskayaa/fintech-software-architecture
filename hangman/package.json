@@ -2,13 +2,16 @@
   "name": "js-hangman",
   "version": "1.0.0",
   "description": "You need to guess the hidden word.",
-  "main": "index.js",
+  "main": "bundle.js",
   "dependencies": {},
   "scripts": {
-    "start": "node src/index.js",
+    "build": "webpack -p",
+    "cover": "istanbul cover _mocha",
     "eslint": "./node_modules/.bin/eslint src/*",
+    "local": "node src/index.js",
+    "start": "npm run build && node ./dist/bundle.js",
     "test": "mocha",
-    "cover": "istanbul cover _mocha"
+    "watch": "webpack --watch"
   },
   "author": "bobrovskaya <nataliya.bobrovskaya@phystech.edu>",
   "license": "ISC",
@@ -17,6 +20,8 @@
     "eslint-config-google": "^0.10.0",
     "istanbul": "^0.4.5",
     "mocha": "^5.2.0",
-    "mocha-lcov-reporter": "^1.3.0"
+    "mocha-lcov-reporter": "^1.3.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
   }
 }
