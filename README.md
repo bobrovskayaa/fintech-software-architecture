@@ -1,8 +1,9 @@
 # fintech-software-architecture
 fintech, course 'Software architecture', 2018
 
-### Folder 'hangman-js'
+### Folder _hangman-js_
 
+* Игра 'Висельник'
 * Присутствует лаконичное описание проекта в файле README.md, используемый формат — Markdown.
 * Любая открытая лицензия, размещенная в файле LICENSE.
 * Декларация сборки и зависимостей.
@@ -11,6 +12,8 @@ fintech, course 'Software architecture', 2018
 * Настроена непрерывная интеграция (Travis).
 * Настроено измерение покрытия кода.
 
-### Folder 'hangman-python'
+### Folder _hangman-python_
 
-* Только игра
+* Игра 'Висельник'
+* Присутствует лаконичное описание проекта в файле README.md, используемый формат — Markdown.
+* Любая открытая лицензия, размещенная в файле LICENSE.
