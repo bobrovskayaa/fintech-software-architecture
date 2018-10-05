@@ -3,9 +3,10 @@
 ## Launch game
 
 Note: You need to have `node` and `npm` on your PC to launch game
-1. Download the folder `hangman-js`
+1. Download the folder `hangman`
 2. Open terminal and in the folder type following:
-`npm run start`
+`npm run install`
+`npm run start` or `npm run local`
 3. The game begins!
 4. Game closes by `Ctrl-C`
 
