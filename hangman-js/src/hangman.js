@@ -1,5 +1,5 @@
 function hangman() {
-    const store = ['hangman', 'natasha', ' affection', 'heart', 'happiness'];
+    const store = ['hangman', 'natasha', 'affection', 'heart', 'happiness'];
     const word = store[Math.floor(Math.random() * store.length)];
     let showedWord = '*'.repeat(word.length);
     let mistakes = 0;
@@ -15,6 +15,7 @@ function hangman() {
         if (!(showedWord.includes('*'))) {
             return {
                 message: 'win',
+                data: showedWord,
                 word
             };
         }
@@ -24,25 +25,40 @@ function hangman() {
                 word
             };
         }
+
         if (word.includes(letter)) {
             const indices = findAll(word, letter);
 
             indices.forEach(index => {
                 showedWord = showedWord.replaceAt(index, letter);
             });
+
+            if (!(showedWord.includes('*'))) {
+                return {
+                    message: 'win',
+                    data: showedWord,
+                    word
+                };
+            }
             return {
                 message: 'hit',
                 data: showedWord,
                 word
             };
-        } else {
-            ++mistakes;
+        }
+
+        ++mistakes;
+        if (mistakes > 4) {
             return {
-                message: 'missed',
-                data: mistakes,
+                message: 'lost',
                 word
             };
         }
+        return {
+            message: 'missed',
+            data: mistakes,
+            word
+        };
     };
 }
 

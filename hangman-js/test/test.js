@@ -24,8 +24,8 @@ describe('Hangman', function() {
                 game('a');
                 game('t');
                 game('s');
-                const { data } = game('h');
-                assert.equal(data, hiddenWord);
+                const { message } = game('h');
+                assert.equal(message, 'win');
                 break;
             }
         });
@@ -45,8 +45,8 @@ describe('Hangman', function() {
                 game('w');
                 game('e');
                 game('r');
-                const { data } = game('y');
-                assert.equal(data, 5);
+                const { message } = game('y');
+                assert.equal(message, 'lost');
                 break;
             }
         });

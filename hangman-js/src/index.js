@@ -17,27 +17,24 @@ stdin.addListener('data', mess => {
             console.log('\nThe word:', data);
             break;
         }
+        case 'win': {
+            console.log('\nYou win!');
+            console.log('The word:', data);
+            break;
+        }
+        case 'lost': {
+            console.log('\nYou lost!');
+            break;
+        }
         case 'hit': {
-            if (!(data.includes('*'))) {
-                console.log('\nYou win!');
-                break;
-            }
             console.log('\nHit!');
             console.log('The word:', data);
             console.log('Guess a letter');
             break;
         }
-        case 'win': {
-            console.log('\nYou win!');
-            break;
-        }
         case 'missed': {
-            if (data > 4) {
-                console.log('\nYou lost!');
-            } else {
-                console.log(`\nMissed, mistake ${data} out of 5.`);
-                console.log('Guess a letter');
-            }
+            console.log(`\nMissed, mistake ${data} out of 5.`);
+            console.log('Guess a letter');
             break;
         }
         case 'error': {
