@@ -1,2 +1,3 @@
 hangman-js/node_modules/*
+hangman-js/coverage/*
 .idea/*

@@ -2,7 +2,7 @@ before_script: cd hangman-js
 sudo: false
 language: node_js
 node_js:
-  - 8
+- "stable"
 after_success:
-  - npm run eslint
-  - npm run test
+- npm run eslint
+- npm run coveralls
