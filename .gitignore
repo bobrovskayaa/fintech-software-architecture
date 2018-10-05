@@ -1,5 +1,4 @@
-hangman-js/node_modules/*
-hangman-js/coverage/*
-hangman-js/dist/*
+hangman/node_modules/*
+hangman/coverage/*
+hangman/dist/*
 .idea/*
-hangman-python/.DS_Store
