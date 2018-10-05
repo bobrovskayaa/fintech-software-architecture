@@ -1,6 +1,8 @@
 # fintech-software-architecture
 fintech, course 'Software architecture', 2018
 
+[![Build Status](https://travis-ci.org/bobrovskayaa/fintech-software-architecture.svg?branch=master)](https://travis-ci.org/bobrovskayaa/fintech-software-architecture)
+
 ### Folder _hangman-js_
 
 * Игра 'Висельник'
